@@ -1,0 +1,547 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- bootstrap cdn link  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- font-awesome cdn link  -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <title>Priscilla's cinema</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class="logo">MY.CINEMA</h1>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item"><a href="index.html">Home</a></li>
+                    <li class="menu-list-item "><a href="movie.html">Movie</a></li>
+                    <li class="menu-list-item">Categories <i class="fas fa-angle-down"></i>
+                        <div class="list">
+                            <a href="comedy.html">Comedy</a>
+                            <a href="romance.html">Romance</a>
+                            <a href="mystery.html">Mystery</a>
+                            <a href="action.html">Action</a>
+                            <a href="cartoon.html">Cartoon</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="profile-container">
+                <img class="profile-picture" src="img/profile.jpg" alt="">
+                <div class="profile-text-container">
+                    <span class="profile-text"><a href="profile.html">Profile</a></span>
+                    <i class="fas fa-caret-down"></i>
+                </div>
+                <div class="toggle">
+                    <i class="fas fa-moon toggle-icon"></i>
+                    <i class="fas fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="content-container">
+
+            <div class="main">
+                <hr>
+                <br>
+                <br>
+
+                <div id="myBtnContainer">
+                    <button class="btn active" onclick="filterSelection('all')" id="defaultOpen"> Show all</button>
+                    <button class="btn" onclick="filterSelection('comedy')"> COMEDY</button>
+                    <button class="btn" onclick="filterSelection('romance')"> ROMANCE</button>
+                    <button class="btn" onclick="filterSelection('mystery')"> MYSTERY</button>
+                    <button class="btn" onclick="filterSelection('action')"> ACTION</button>
+                    <button class="btn" onclick="filterSelection('cartoon')"> CARTOON</button>
+                </div>
+
+                <!-- Portfolio Gallery Grid -->
+                <div class="row">
+                    <div class="column comedy">
+                        <div class="content" style="min-height: 600px;">
+                            <img src="image/comedy/comedy1a.jpg" alt="comedy" style="width:100%; height: 300px;">
+                            <br><br>
+                            <h2>Pitching Tents</h2><br>
+                            <h4>9.2
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-full checked"></span>
+                            </h4><br>
+                            <p> A mysterious goddess, a vulgar guidance counsellor and a
+                                no-nonsense father ...</p>
+                        </div>
+                    </div>
+                    <div class="column comedy">
+                        <div class="content">
+                            <img src="image/comedy/comedy2a.jpg" alt="comedy" style="width:100%; height: 300px;">
+                            <br><br>
+                            <h2>General Education</h2><br>
+                            <h4>8.9
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-full checked"></span>
+                            </h4><br>
+                            <p>At school, Levi falls in love with his classmate, Katie, and learns together...</p>
+                        </div>
+                    </div>
+                    <div class="column comedy">
+                        <div class="content">
+                            <img src="image/comedy/comedy3a.jpg" alt="comedy" style="width:100%; height: 300px;">
+                            <br><br>
+                            <h2>Six grandchildren...</h2><br>
+                            <h4>9.2
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-full checked"></span>
+                            </h4><br>
+                            <p>However, his life is about to be changed forever when he inherits his six...</p>
+                        </div>
+                    </div>
+                    <div class="column comedy">
+                        <div class="content">
+                            <img src="image/comedy/comedy4a.jpg" alt="comedy" style="width:100%; height: 300px;">
+                            <br><br>
+                            <h2>All the way</h2><br>
+                            <h4>7.0
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-full checked"></span>
+                            </h4><br>
+                            <p>All the Way tells the story of Wang Defu, a "talking tube" driver who is frustrated in
+                                the ...</p>
+                        </div>
+                    </div>
+                    <div class="column comedy">
+                        <div class="content">
+                            <img src="image/comedy/comedy5a.jpg" alt="comedy" style="width:100%; height: 300px;">
+                            <br><br>
+                            <h2>The Deported </h2><br>
+                            <h4>9.2
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-full checked"></span>
+                            </h4><br>
+                            <p>The Deported follows long term residents of the United States who are in the
+                                deportation...</p>
+                        </div>
+                    </div>
+                    <div class="column comedy">
+                        <div class="content">
+                            <img src="image/comedy/comedy6a.jpg" alt="comedy" style="width:100%; height: 300px;">
+                            <br><br>
+                            <h2>The Good Student</h2><br>
+                            <h4>9.2
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-full checked"></span>
+                            </h4><br>
+                            <p>An unpopular high school teacher turns his life around after a student is kidnapped and
+                                a...</p>
+                        </div>
+                    </div>
+
+                    <div class="column romance">
+                        <div class="content">
+                            <img src="image/romance/r1a.png" alt="romance" style="width:100%; height: 300px;">
+                            <br><br>
+                            <h2>MR right</h2><br>
+                            <h4>7.3
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-full checked"></span>
+                            </h4><br>
+                            <p>A girl falls for the "perfect" guy, who happens to have a very fatal and something...</p>
+                        </div>
+                    </div>
+                    <div class="column romance">
+                        <div class="content">
+                            <img src="image/romance/r2a.jpg" alt="romance" style="width:100%; height: 300px;">
+                            <br><br>
+                            <h2>Return to the blue lagoon
+                            </h2><br>
+                            <h4>6.2
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-full checked"></span>
+                            </h4><br>
+                            <p>The film tells the story of two young children marooned on a tropical island...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="column romance">
+                        <div class="content">
+                            <img src="image/romance/r3a.jpg" alt="romance" style="width:100%; height: 300px;">
+                            <br><br>
+                            <h2>Betting on the bridge</h2><br>
+                            <h4>6.7
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-full checked"></span>
+                            </h4><br>
+                            <p>A womanizer bets that he can get someone to accept his marriager...</p>
+                        </div>
+                    </div>
+                    <div class="column romance">
+                        <div class="content">
+                            <img src="image/romance/r4aa.jpg" alt="romance" style="width:100%; height: 300px;">
+                            <br><br>
+                            <h2>Close to love</h2><br>
+                            <h4>8.5
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-full checked"></span>
+                            </h4><br>
+                            <p>The relationship between Xu Yi and Gao Xiaonan, close friends growing up...</p>
+                        </div>
+                    </div>
+                    <div class="column romance">
+                        <div class="content">
+                            <img src="image/romance/r5a.jpg" alt="romance" style="width:100%; height: 300px;">
+                            <br><br>
+                            <h2>Yakuza Campus</h2><br>
+                            <h4>7.9
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-full checked"></span>
+                            </h4><br>
+                            <p>Two rich heirs re-enter school after urging from their fathers. Jiang Yi Dong...</p>
+                        </div>
+                    </div>
+                    <div class="column romance">
+                        <div class="content">
+                            <img src="image/romance/r6a.jpg" alt="romance" style="width:100%; height: 300px;">
+                            <br><br>
+                            <h2>My Girlfriend is a Mermaid</h2><br>
+                            <h4>9.2
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-full checked"></span>
+                            </h4><br>
+                            <p>Mermaid Sunny secretly sneaked into the human world, unfortunately losing...</p>
+                        </div>
+                    </div>
+
+                    <div class="column mystery">
+                        <div class="content">
+                            <img src="image/mystery/m1a.jpg" alt="mystery" style="width:100%; height: 300px;">
+                            <br><br>
+                            <h2> Down the road</h2><br>
+                            <h4>9.2
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-full checked"></span>
+                            </h4><br>
+                            <p>When a paperboy goes missing in the local woods, it's up to something...</p>
+                        </div>
+                    </div>
+                    <div class="column mystery">
+                        <div class="content">
+                            <img src="image/mystery/m2a.jpg" alt="mystery" style="width:100%; height: 300px;">
+                            <br><br>
+                            <h2>Be Still And know</h2><br>
+                            <h4>8.2
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-full checked"></span>
+                            </h4><br>
+                            <p>A unique family-friendly suspense film following four young women...</p>
+                        </div>
+                    </div>
+                    <div class="column mystery">
+                        <div class="content">
+                            <img src="image/mystery/m3a.jpg" alt="mystery" style="width:100%; height: 300px;">
+                            <br><br>
+                            <h2>The Mysterious Notes</h2><br>
+                            <h4>7.4
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-full checked"></span>
+                            </h4><br>
+                            <p>A reluctant family accompanies their businessman father to something ...</p>
+                        </div>
+                    </div>
+                    <div class="column mystery">
+                        <div class="content">
+                            <img src="image/mystery/m4a.jpg" alt="mystery" style="width:100%; height: 300px;">
+                            <br><br>
+                            <h2>The Mystery Palace </h2><br>
+                            <h4>8.0
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-full checked"></span>
+                            </h4><br>
+                            <p>Prosecutor Jun Wu Jiu is sentenced to prison after he was framed...</p>
+                        </div>
+                    </div>
+                    <div class="column mystery">
+                        <div class="content">
+                            <img src="image/mystery/m5a.jpg" alt="mystery" style="width:100%; height: 300px;">
+                            <br><br>
+                            <h2>Magic in the Water</h2><br>
+                            <h4>6.2
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-full checked"></span>
+                            </h4><br>
+                            <p>Two siblings find out about a mythical aquatic monster and there are...</p>
+                        </div>
+                    </div>
+                    <div class="column mystery">
+                        <div class="content">
+                            <img src="image/mystery/m6a.jpg" alt="mystery" style="width:100%; height: 300px;">
+                            <br><br>
+                            <h2>Out of Crimes</h2><br>
+                            <h4>7.0
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-full checked"></span>
+                            </h4><br>
+                            <p>Miner Junpo's daughter is seriously ill and needs urgent treatment. Junpo...</p>
+                        </div>
+                    </div>
+
+                    <div class="column action">
+                        <div class="content">
+                            <img src="image/action/a1a.jpg" alt="action" style="width:100%; height: 300px;">
+                            <br><br>
+                            <h2>Mount adam</h2><br>
+                            <h4>9.2
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-full checked"></span>
+                            </h4><br>
+                            <p>A team of UFO investigators find themselves fighting for survival as...</p>
+                        </div>
+                    </div>
+                    <div class="column action">
+                        <div class="content">
+                            <img src="image/action/a2a.jpg" alt="action" style="width:100%; height: 300px;">
+                            <br><br>
+                            <h2>Tsunami Disaster </h2><br>
+                            <h4>9.2
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-full checked"></span>
+                            </h4><br>
+                            <p>The story of a tourist family in Thailand caught in the destruction and chaotic...</p>
+                        </div>
+                    </div>
+                    <div class="column action">
+                        <div class="content">
+                            <img src="image/action/a3a.jpg" alt="action" style="width:100%; height: 300px;">
+                            <br><br>
+                            <h2>Big Trouble in the seattle</h2><br>
+                            <h4>7.6
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-full checked"></span>
+                            </h4><br>
+                            <p>A gangster is going through a court trial for murder. Meanwhile there are...</p>
+                        </div>
+                    </div>
+                    <div class="column action">
+                        <div class="content">
+                            <img src="image/action/a4a.jpg" alt="action" style="width:100%; height: 300px;">
+                            <br><br>
+                            <h2>Mohist Mechanism </h2><br>
+                            <h4>9.2
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-full checked"></span>
+                            </h4><br>
+                            <p>Shen Tuo, the descendant of the Mohist Mechanism, took a mechanism...</p>
+                        </div>
+                    </div>
+                    <div class="column action">
+                        <div class="content">
+                            <img src="image/action/a5a.jpg" alt="action" style="width:100%; height: 300px;">
+                            <br><br>
+                            <h2>Dragon Hunt</h2><br>
+                            <h4>7.5
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-full checked"></span>
+                            </h4><br>
+                            <p>"Dragon Hunting" is a treasure hunting adventure film directed by Lan...</p>
+                        </div>
+                    </div>
+                    <div class="column action">
+                        <div class="content">
+                            <img src="image/action/a6a.jpg" alt="action" style="width:100%; height: 300px;">
+                            <br><br>
+                            <h2>Shaolin Temple</h2><br>
+                            <h4>8.0
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-full checked"></span>
+                            </h4><br>
+                            <p>The movie tells a story in the 33rd year of Jiajing Emperor of the Shaolin...</p>
+                        </div>
+                    </div>
+
+                    <div class="column cartoon">
+                        <div class="content">
+                            <img src="image/cartoon/ct1a.webp" alt="cartoon" style="width:100%; height: 300px;">
+                            <br><br>
+                            <h2>Valley Of The Lanterns</h2><br>
+                            <h4>9.0
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-full checked"></span>
+                            </h4><br>
+                            <p>An old woman's hold on the past puts her family's future in jeopardy....</p>
+                        </div>
+                    </div>
+                    <div class="column cartoon">
+                        <div class="content">
+                            <img src="image/cartoon/ct2a.jpg" alt="cartoon" style="width:100%; height: 300px;">
+                            <br><br>
+                            <h2>Boonie Bears: Blast into the Past</h2><br>
+                            <h4>7.2
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-full checked"></span>
+                            </h4><br>
+                            <p>Boonie bears and bareheaded Qiang blast into primitive times and experience a...</p>
+                        </div>
+                    </div>
+                    <div class="column cartoon">
+                        <div class="content">
+                            <img src="image/cartoon/ct3a.png" alt="cartoon" style="width:100%; height: 300px;">
+                            <br><br>
+                            <h2>Little Door Gods</h2><br>
+                            <h4>8.0
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-full checked"></span>
+                            </h4><br>
+                            <p>Door Gods are guardian spirits protecting households in the tradition of ...</p>
+                        </div>
+                    </div>
+                    <div class="column cartoon">
+                        <div class="content">
+                            <img src="image/cartoon/ct4a.jpg" alt="cartoon" style="width:100%; height: 300px;">
+                            <br><br>
+                            <h2>Spookiz</h2><br>
+                            <h4>9.2
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-full checked"></span>
+                            </h4><br>
+                            <p>At an elementary school in the countryside where human children live...</p>
+                        </div>
+                    </div>
+                    <div class="column cartoon">
+                        <div class="content">
+                            <img src="image/cartoon/ct5a.jpg" alt="cartoon" style="width:100%; height: 300px;">
+                            <br><br>
+                            <h2>KungFood</h2><br>
+                            <h4>8.5
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-full checked"></span>
+                            </h4><br>
+                            <p>Super Bao, an innocent and passionate steamed stuffed bun, goes...</p>
+                        </div>
+                    </div>
+                    <div class="column cartoon">
+                        <div class="content">
+                            <img src="image/cartoon/ct6a.jpg" alt="cartoon" style="width:100%; height: 300px;">
+                            <br><br>
+                            <h2>Minuscule Mandibles From Far Away</h2><br>
+                            <h4>8.2
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-full checked"></span>
+                            </h4><br>
+                            <p>When the first snow falls in the valley, it is urgent to prepare something...</p>
+                        </div>
+                    </div>
+
+
+                    <!-- END GRID -->
+                </div>
+
+                <!-- END MAIN -->
+
+            </div>
+        </div>
+        <script src="app.js"></script>
+</body>
+
+</html>

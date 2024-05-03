@@ -1,5 +1,6 @@
 * {
   margin: 0;
+
   box-sizing: border-box;
 }
 
@@ -166,6 +167,12 @@ body {
 
 .profile-text-container {
   margin: 0 20px;
+  text-decoration: none;
+}
+
+.profile-text-container span a {
+  color: brown;
+  text-decoration: none;
 }
 
 .profile-picture {
@@ -201,36 +208,12 @@ body {
   transition: 1s ease all;
 }
 
-/* .sidebar {
-  width: 50px;
-  height: 100%;
-  background-color: black;
-  position: fixed;
-  top: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 60px;
-} */
-
-/* .left-menu-icon {
-  color: white;
-  font-size: 20px;
-  margin-bottom: 40px;
-} */
-
 /*whole page except nav*/
 .container {
   background-color: #151515;
   min-height: calc(100vh - 50px);
   color: white;
 }
-
-/*whole content*/
-/* .content-container {
-  margin-left: 50px; 
- border: 1px solid #fff;
-} */
 
 /*slider part*/
 header {
@@ -240,7 +223,7 @@ header {
   transition: 1s linear;
   z-index: 2;
   max-height: 500px;
-  /* border: 1px solid #fff; */
+  /* border: 1px solid pink; */
 }
 
 header::before {
@@ -358,12 +341,12 @@ header .movie-content .btns button {
 }
 
 /*addlist button*/
-/* header .movie-content .btns button:nth-child(2) {
+header .movie-content .btns button:nth-child(2) {
   border: 2px solid #000;
   color: #fff;
   background: #000;
   box-shadow: 0px 3px 10px #000;
-} */
+}
 
 /*watch button pointer*/
 header .movie-content .btns button:hover {
@@ -374,12 +357,12 @@ header .movie-content .btns button:hover {
 }
 
 /*addlist button pointer*/
-/* header .movie-content .btns button:nth-child(2):hover {
+header .movie-content .btns button:nth-child(2):hover {
   background: brown;
   border: 2px solid brown;
   color: #fff;
   box-shadow: 0px 3px 10px brown;
-} */
+}
 
 /*movie each button logo*/
 header .movie-content .btns button .fas {
@@ -415,34 +398,6 @@ header .slider_btns h6:nth-child(1) {
   background: #fff;
   /* border: 1px solid #fff; */
 }
-
-/*stop from here*/
-/*movie title (django)*/
-/* .featured-title {
-  width: 200px;
-  border: 1px solid #fff; 
-} */
-
-/*movie description*/
-/* .featured-desc {
-  width: 500px;
-  color: lightgray;
-  margin: 30px 0;
-  border: 1px solid #fff; 
-} */
-
-/*watch buttonn*/
-/* .featured-button {
-  background-color: #4dbf00;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 10px;
-  border: none;
-  outline: none;
-  font-weight: bold;
-} */
-
-/* stop before here */
 
 /* video box start  */
 
@@ -641,9 +596,7 @@ header .slider_btns h6:nth-child(1) {
   width: 70%;
 }
 
-
 /* javascript classes end  */
-
 
 .video_bx .title_video {
   position: absolute;
@@ -839,14 +792,6 @@ header .slider_btns h6:nth-child(1) {
   color: black;
 }
 
-/* .sidebar.active {
-  background-color: white;
-} */
-
-/* .left-menu-icon.active {
-  color: black;
-} */
-
 .toggle.active {
   background-color: black;
 }
@@ -856,8 +801,623 @@ header .slider_btns h6:nth-child(1) {
   transform: translateX(-20px);
 }
 
+/* Center website */
+.main {
+  max-width: 1500px;
+  margin: auto;
+}
+
+.main h1 {
+  font-size: 100px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row>.column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none;
+  /* Hide all elements by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: black;
+  padding: 10px;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+
+}
+
+.content:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.content .container {
+  padding: 2px 16px;
+  background-color: white;
+  color: #000;
+  max-height: 100px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+/*start profile page*/
+.profile-page-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100%;
+  width: 100%;
+  flex-wrap: wrap;
+  position: relative;
+
+}
+
+.profile-card {
+  background: #111;
+  width: 400px;
+  padding: 3rem;
+  border-radius: 10px;
+  min-height: 400px;
+  position: relative;
+  color: #fff;
+  margin: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.profile-card .profile-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+
+}
+
+/*user name & id*/
+.profile-details .intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.profile-details .intro h2 {
+  margin-top: 10px;
+}
+
+.profile-details .intro h4 {
+  background: goldenrod;
+  color: black;
+  font-weight: 400;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin: 8px;
+  margin-top: 15px;
+}
+
+.profile-details .intro h4 a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+.profile-details .contact-info {
+  background-color: #1d1d1d;
+  padding: 15px;
+  border-radius: 10px;
+  width: 100%;
+
+}
+
+.profile-details .contact-info .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 10px 0;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.contact-info .row .icon {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  border-radius: 5px;
+  background-color: #111;
+  text-align: center;
+  color: #fff;
+  transition: 0.5s;
+
+}
+
+.row .icon:hover {
+  transform: scale(1.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.row .content {
+  min-width: 70%;
+
+}
+
+.row .content span {
+  font-size: 12px;
+}
+
+.signup-btn {
+  background: linear-gradient(45deg, rgb(197, 79, 79), brown);
+  color: #fff;
+  padding: 1rem 3rem;
+  border-radius: 30px;
+  margin-top: 1.5rem;
+  border: none;
+}
+
+.signup-btn a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+/*???*/
+/* Full-width input fields */
+#country,
+#gender,
+#message,
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+#country,
+#gender,
+#message,
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+  min-height: 1000px;
+}
+
+/*start new sigin*/
+
+.sigin-container {
+  position: absolute;
+  margin-left: 36%;
+  margin-top: 1%;
+  width: 440px;
+  height: auto;
+  top: 10%;
+  background-color: #000;
+  /* border: 1px solid lightblue; */
+}
+
+.sigin-box {
+  padding: 20px 20px 20px;
+  top: 30px;
+}
+
+.sigin-container h1 {
+  color: #fff;
+  margin-top: 20px;
+  /* margin-left: 0px; */
+  text-align: center;
+  /* border: 1px solid #fff; */
+}
+
+input {
+  margin-left: 50px;
+  margin-top: 20px;
+  width: 320px;
+  height: 47px;
+  background-color: #333;
+  border-radius: 3px;
+  border: none;
+  font-size: 20px;
+}
+
+input::placeholder {
+  font-size: 17px;
+  margin-left: 15px;
+  padding: 12px;
+}
+
+input[type=reset],
+input[type=submit] {
+  width: 30%;
+  height: 45px;
+  background-color: brown;
+  color: #fff;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+
+input[type=checkbox] {
+  width: 25px;
+  height: 18px;
+  border-radius: 5px;
+  margin-left: 0px;
+}
+
+label {
+  color: rgb(125, 119, 119);
+}
+
+.form a {
+  float: right;
+  margin-top: 24px;
+  margin-right: 64px;
+  color: rgb(125, 119, 119);
+  text-decoration: none;
+}
+
+.sigin-content {
+  position: absolute;
+  margin-top: 80px;
+  font-size: 9px;
+  margin-left: 55px;
+}
+
+.sigin-content h2 {
+  color: rgb(125, 119, 119);
+}
+
+.sigin-container a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*end new sigin*/
+
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  /* 模糊效果 */
+  padding-top: 50px;
+  border: 1px solid pink;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 30%;
+  /* Could be more or less, depending on screen size */
+
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+/**/
+table {
+  margin-top: 50px;
+  text-align: center;
+  background: #333;
+  color: #fff;
+}
+
+#show th,
+#show td {
+  padding: 13px;
+}
+
+#btna td input {
+  width: 100%;
+}
+
+
+
+/*submission accepted*/
+.popup {
+  width: 400px;
+  background: black;
+  border-radius: 6px;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 20px 20px 20px;
+  color: green;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup {
+  visibility: visible;
+  top: 10%;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+/*???*/
+
+/*****about section ****/
+.about {
+  background-color: #111;
+  min-width: 1000px;
+  min-height: 600px;
+  padding: 2rem 3rem;
+  border-radius: 10px;
+}
+
+.about h1 {
+  color: #f2f2f2;
+  margin-bottom: 1.1rem;
+  position: relative;
+  display: inline-block;
+  font-size: 3.5rem;
+}
+
+.about h1::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: -50%;
+  width: 45%;
+  height: 3px;
+  background: linear-gradient(45deg, #f64c57, #e21b5a);
+}
+
+.about h2 {
+  color: #f2f2f2;
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+
+.about p {
+  color: #555;
+  margin: 1.5rem 0;
+}
+
+.about .work {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+.work .workbox {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+  border: 1px solid #333;
+  padding: 1rem;
+  margin: 1rem;
+
+}
+
+.work .workbox .desc {
+  width: 75%;
+  color: #555;
+}
+
+.work .workbox .desc h3 {
+  color: #f2f2f2;
+  margin-bottom: 3px;
+}
+
+.work .workbox .desc p {
+  margin: 0px;
+}
+
+/***Responsive Design ***/
+
+/*end profile page*/
+
 @media only screen and (max-width: 940px) {
   .menu-container {
     display: none;
+  }
+
+  /*profile sign up*/
+  .cancelbtn,
+  .signupbtn {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  /*profile*/
+  .about {
+    width: 1005;
+    max-width: 400px;
+    padding: 1rem;
+    margin: 1rem;
+
+  }
+
+  .about h1 {
+    font-size: 2.2rem;
+  }
+
+  .about .work {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, auto);
   }
 }
